@@ -1,0 +1,48 @@
+:root {
+    --primary-color: #e70738;
+}
+
+@media screen and (min-width: 320px) and (max-width: 760px) {
+    menu.desktop-menu {
+        display: none;
+    }
+
+    menu.responsive-menu {
+        display: flex;
+        position: absolute;
+        top: 95%;
+        width: 100%;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .menu-logo {
+        display: none;
+    }
+
+    .menu-cancel {
+        display: none;
+    }
+
+    .responsive-navbar {
+        display: flex;
+        transition: 1.3s;
+        justify-content: center;
+        align-items: center;
+        gap: 15px;
+        background-color: var(--primary-color);
+        width: 65px;
+        height: 40px;
+        border-radius: 20px;
+    }
+
+    .responsive-navbar.open {
+        width: 70%;
+    }
+
+    .btn-start-cancel {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
