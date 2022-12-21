@@ -1,4 +1,4 @@
-<?php include_once "../template/header.php"; ?>
+<?php $webPage = "contact"; include_once "../template/header.php"; ?>
 
 <main>
     

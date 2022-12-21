@@ -21,7 +21,7 @@ function OpenMenu() {
 
     $('.responsive-navbar').addClass('open');
 
-    $('menu.responsive-menu .menu-logo').show('slow');
+    $('menu.responsive-menu .menu-logo').show(250);
 }
 function CloseMenu() {
 
@@ -35,7 +35,7 @@ function CloseMenu() {
 
     $('.responsive-navbar').removeClass('open');
 
-    $('menu.responsive-menu .menu-logo').hide('slow');
+    $('menu.responsive-menu .menu-logo').hide(150);
 
 }
 

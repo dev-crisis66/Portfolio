@@ -26,7 +26,7 @@
 
     .responsive-navbar {
         display: flex;
-        transition: 1.3s;
+        transition: 0.7s;
         justify-content: center;
         align-items: center;
         gap: 15px;

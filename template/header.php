@@ -6,9 +6,9 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= WEBSITE_TITLE . ' | ' . WEBSITE_PAGE; ?></title>
+    <title><?= WEBSITE_TITLE . ' | ' . strtoupper($webPage ?? "----"); ?></title>
     <link rel="stylesheet" href="../css/style.css">
-    <?= file_exists("scripts/" . strtolower(getCurrentPage())) ? "<link  rel='stylesheet' href=../css/" . strtolower(getCurrentPage()) . ".css>" : ""; ?>
+    <?= file_exists("scripts/" . strtolower($webPage ?? "----")) ? "<link  rel='stylesheet' href=../css/" . strtolower($webPage ?? "----") . ".css>" : ""; ?>
     <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
