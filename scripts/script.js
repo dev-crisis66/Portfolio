@@ -61,3 +61,8 @@ $('#close-alert').on('click', function () {
     localStorage.setItem('alert-info-state', 'close');
 
 });
+
+// Remove watermark 000webhost
+$(document).ready(function(){
+    $('div a[title="Hosted on free web hosting 000webhost.com. Host your own website for FREE."]').parent().remove();
+})

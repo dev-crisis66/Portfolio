@@ -6,7 +6,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?= WEBSITE_TITLE . ' | ' . strtoupper($webPage ?? "----"); ?></title>
+    <title><?= strtoupper(WEBSITE_TITLE) . ' | ' . strtoupper($webPage ?? "----"); ?></title>
     <link rel="stylesheet" href="../css/style.css">
     <?= file_exists("../css/" . strtolower($webPage ?? "----") . ".css") ? "<link rel='stylesheet' href=../css/" . strtolower($webPage ?? "----") . ".css>" : ""; ?>
     <link rel="shortcut icon" href="../assets/logo.ico" type="image/x-icon">
@@ -52,7 +52,7 @@
                 </div>
             </a>
 
-            <a href="/pages">
+            <a href="#">
                 <div class="hexa">
                     <iconify-icon class="hexa-empty <?= strtolower($webPage) == strtolower('null') ? 'active' : '' ?>" icon="ph:hexagon-thin" width="100" height="100"></iconify-icon>
                     <iconify-icon class="menu-logo" icon="ic:baseline-share" style="color: white;" width="36" height="36"></iconify-icon>
